@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Troy's Dev Toolkit</title>
+  <meta name="description" content="A zero-dependency toolbox for everyday developer tasks. Runs 100% in your browser.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">⚡</div>
+        <div>
+          <h1>Troy's Dev Toolkit</h1>
+          <p class="tagline">Snappy tools, zero baggage</p>
+        </div>
+      </div>
+
+      <div class="search-wrap">
+        <input id="tool-search" type="search" placeholder="Search tools…  ( / )" autocomplete="off" spellcheck="false">
+      </div>
+
+      <nav id="tool-nav" aria-label="Tools"></nav>
+
+      <footer class="sidebar-footer">
+        <span id="tool-count">0 tools</span>
+        <span class="dot">·</span>
+        <a href="https://github.com/TechTroyAi/Test" target="_blank" rel="noopener">GitHub</a>
+        <span class="dot">·</span>
+        <span>0 deps</span>
+      </footer>
+    </aside>
+
+    <main id="main">
+      <header class="tool-header">
+        <h2 id="tool-title"></h2>
+        <p id="tool-desc"></p>
+      </header>
+      <section id="tool-panel" class="panel"></section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
